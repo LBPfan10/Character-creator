@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/Styles.css">
+    <script type="createcharacter"
+        src="Code/code.js">
+    </script>
+</head>
+<body>
+    <h1>Character Creator</h1>
+    <form action="">
+        <label for="#PlayernameInput">Character name:</label>
+        <br>
+        <input id="#PlayernameInput" type="text">
+        <br>
+        <label for="level">Level</label>
+        <input type="Number" id="level">
+        <br>
+        <label for="date of birth">Date of Birth:</label>
+        <input type="date" id="Date of birth">
+        <br>
+        <label for="">Starting Skills:</label>
+        <br>
+        <ul>
+    <li>
+        <label for="Sneak">Stealth</label>
+        <input type="checkbox" name="" id="stealthSkill">
+    </li>
+    <li>
+        <label for="one-handed">Melee</label>
+        <input type="checkbox" name="" id="meleeSkill">
+    </li>
+    <li>
+        <label for="block">block</label>
+        <input type="checkbox" name="" id="defenseSkill">
+    </li>
+    <li>
+        <label for="magic">magic</label>
+        <input type="checkbox" name="" id="magic">
+    </li>
+    <li>
+        <label for="archery">archery</label>
+        <input type="checkbox" name="" id="archery">
+    </li>
+    <li>
+        <label for="cooking">cooking</label>
+        <input type="checkbox" name="" id="cooking">
+    </li>
+    </ul>
+        <br>
+        <label for="#Class">Class</label>
+        <select name="" id="#Class">
+            <option value="Fighter">Fighter</option>
+            <option value="Wizard">Wizard</option>
+            <option value="Rouge">Rouge</option>
+        </select>
+        <br>
+        <label for="">Stats:</label>
+        <ul>
+            <li>
+                <label for="Strength">Strength</label>
+                <input type="Number" id="Strength">
+            </li>
+            <li>
+                <label for="Endurence">Endurence</label>
+                <input type="Number" id="Endurence">
+            </li>
+            <li>
+                <label for="Intelligence">Intelligence</label>
+                <input type="Number" id="Intelligence">
+            </li>
+            <li> 
+                <label for="dexterity">dexterity</label>
+                <input type="Number" id="dexterity">
+            </li>
+            <li> 
+                <label for="charisma">charisma</label>
+                <input type="Number" id="charisma">
+            </li>
+            <li> 
+                <label for="luck">luck</label>
+                <input type="Number" id="luck">
+            </li>
+            <li> 
+                <label for="perception">perception</label>
+                <input type="Number" id="perception">
+            </li>
+        </ul>
+        <label for="">Alignment:</label>
+        <br>
+        <label for="Lawfulrb">Lawful</label>
+        <input type="radio" name="Alignment" value="Lawful" id="Lawfulrb">
+        <br>
+        <label for="Nuetraleb">Nuetral</label>
+        <input type="radio" name="Alignment" value="Nuetral" id="Nuetralrb">
+        <br>
+        <label for="Chaoticrb">Chaotic</label>
+        <input type="radio" name="Alignment" value="Chaotic" id="Chaoticrb">
+        <br>
+        <label for="">Portrait</label>
+        <input type="file" name="" id="" accept=".png,.jpeg,.jpg">
+        <br>
+        <input type="Button" onclick="createcharacter()">
+        <input type="Reset">
+        
+        
+    </form>
+
+<div id="outputsheet"> 
+    <h1>Character Sheet</h1>
+    <h2>Name: </h2>
+    <p id="#PlayernameOutput"></p>
+</div>
+   
+    <script src="Code/code.js"></script>
+</body>
+</html>
